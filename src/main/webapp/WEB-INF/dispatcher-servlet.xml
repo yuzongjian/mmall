@@ -12,7 +12,7 @@
 
     <mvc:annotation-driven>
         <mvc:message-converters>
-            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+            <bean class="org.springframework.http.converter.StringH ttpMessageConverter">
                 <property name="supportedMediaTypes">
                     <list>
                         <value>text/plain;charset=UTF-8</value>
@@ -20,6 +20,7 @@
                     </list>
                 </property>
             </bean>
+            <!--json序列化反序列化工具-->
             <bean class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter">
                 <property name="supportedMediaTypes">
                     <list>
